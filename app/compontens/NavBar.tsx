@@ -1,6 +1,7 @@
 'use client';
 
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function NavBar() {
@@ -46,17 +47,20 @@ export default function NavBar() {
             (navbarOpen ? " flex" : " hidden")
           }
         >
-          <div className="md:ml-auto md:mr-auto font-4 pt-1 md:pl-14 pl-1 flex flex-wrap items-center md:text-base text-1xl md:justify-center justify-items-start">
-            <a className="mr-11 pr-2 cursor-pointer text-gray-300 hover:text-white font-semibold tr04">
-              Features
-            </a>
-            <a className="mr-12 md:ml-11 ml-0 cursor-pointer text-gray-300 hover:text-white font-semibold tr04">
-              Pricing
-            </a>
-            <a className="mr-5 cursor-pointer text-gray-300 hover:text-white font-semibold tr04">
-              Careers
-            </a>
-          </div>
+          <ul className="md:ml-auto md:mr-auto font-4 pt-1 md:pl-14 pl-1 flex flex-wrap items-center md:text-base text-1xl md:justify-center justify-items-start">
+            <li>
+              <Link href="#koncerty" className="mr-11 cursor-pointer text-gray-300 hover:text-white font-semibold tr04">Koncerty</Link>
+            </li>
+            <li>
+              <Link href="#sklad" className="mr-11 cursor-pointer text-gray-300 hover:text-white font-semibold tr04">Skład zespołu</Link>
+            </li>
+            <li>
+              <Link href="#posluchaj" className="mr-11 cursor-pointer text-gray-300 hover:text-white font-semibold tr04">Posłuchaj</Link>
+            </li>
+            <li>
+              <Link href="#kontakt" className="mr-11 cursor-pointer text-gray-300 hover:text-white font-semibold tr04">Kontakt</Link>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
