@@ -14,7 +14,7 @@ export default function NavBar() {
             href="/"
             className="flex text-3xl text-white font-medium mb-4 md:mb-0"
           >
-            <Image src={'/images/logo.jpg'} width={200} height={100} alt="LoF" />
+            <Image src={'/images/logo.jpg'} width={200} height={100} alt="LoF - Light of Freedom" />
           </a>
           <button
             className="text-white pb-4 cursor-pointer leading-none px-3 py-1 md:hidden outline-none focus:outline-none content-end ml-auto"
