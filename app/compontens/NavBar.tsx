@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
-import logo from '../assets/images/logo.jpg';
 
 export default function NavBar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -15,7 +14,7 @@ export default function NavBar() {
             href="/"
             className="flex text-3xl text-white font-medium mb-4 md:mb-0"
           >
-            <Image src={logo} width={200} height={100} alt="LoF" />
+            <Image src={'/images/logo.jpg'} width={200} height={100} alt="LoF" />
           </a>
           <button
             className="text-white pb-4 cursor-pointer leading-none px-3 py-1 md:hidden outline-none focus:outline-none content-end ml-auto"

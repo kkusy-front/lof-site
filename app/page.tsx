@@ -7,14 +7,17 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <section className="text-gray-600 body-font">
-      <div className="max-w-5xl pt-52 pb-24 mx-auto">
+      <div className="container flex flex-col items-center justify-center mx-auto pt-32">
+        <Image src={'/images/hero.png'} width={1200} height={400}  alt="" />
+      </div>
+      <div className="max-w-5xl pt-32 pb-24 mx-auto">
         <h1 className="text-80 text-center font-4 lh-6 ld-04 font-bold text-white mb-6">
-          Create your next website fast and easy
+          Light Of Freedom
         </h1>
         <h2 className="text-2xl font-4 font-semibold lh-6 ld-04 pb-11 text-gray-700 text-center">
-          nine4 is a free to use template website for websites made
+          Zespół muzyczny z Bieszczad.
           <br />
-          with Next.js and styled with Tailwind CSS
+          Zapraszamy do kontaktu
         </h2>
         <div className="ml-6 text-center">
           <a
@@ -34,13 +37,6 @@ export default function Home() {
             </div>
           </a>
         </div>
-      </div>
-      <div className="container flex flex-col items-center justify-center mx-auto">
-        <img
-          className="object-cover object-center w-3/4 mb-10 border shadow-md g327"
-          alt="Placeholder Image"
-          src="./images/placeholder.png"
-        ></img>
       </div>
       <h2 className="pt-40 mb-1 text-2xl font-semibold tracking-tighter text-center text-gray-200 lg:text-7xl md:text-6xl">
         Koncerty
