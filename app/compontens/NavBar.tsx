@@ -2,12 +2,10 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
-import logo from '../../public/image/logo.jpg';
+import logo from '../assets/images/logo.jpg';
 
 export default function NavBar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const [flyer, setFlyer] = useState(false);
-  const [flyerTwo, setFlyerTwo] = useState(false);
 
   return (
     <header className="fixed top-0 w-full clearNav z-50">

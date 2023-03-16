@@ -51,25 +51,25 @@ export default function Home() {
       </p>
       <div className="pt-12 pb-24 max-w-4xl mx-auto fsac4 md:px-1 px-3">
         <div className="ktq4">
-        <Image src='/../public/image/plakat_wosp_23.jpg' width={600} height={500} alt="plakat WOŚP w Ustrzykach Dolnych 2023" />
+        <Image src={'/images/plakat_wosp_23.jpg'} width={600} height={500} alt="plakat WOŚP w Ustrzykach Dolnych 2023" />
           <h3 className="pt-3 font-semibold text-lg text-white">
             Koncert podczas Finału Wielkiej Orkiestry Świątecznej Pomocy
           </h3>
         </div>
         <div className="ktq4">
-        <Image src='/../public/image/plakat_ud_festiwal_22.jpg' width={600} height={500} alt="plakat WOŚP w Ustrzykach Dolnych 2023" />
+        <Image src='/images/plakat_ud_festiwal_22.jpg' width={600} height={500} alt="plakat WOŚP w Ustrzykach Dolnych 2023" />
           <h3 className="pt-3 font-semibold text-lg text-white">
             Koncert podczas Finału Wielkiej Orkiestry Świątecznej Pomocy
           </h3>
         </div>
         <div className="ktq4">
-        <Image src='/../public/image/plakat_dozynki_wojtkowa_22.jpg' width={600} height={500} alt="plakat WOŚP w Ustrzykach Dolnych 2023" />
+        <Image src='/images/plakat_dozynki_wojtkowa_22.jpg' width={600} height={500} alt="plakat WOŚP w Ustrzykach Dolnych 2023" />
           <h3 className="pt-3 font-semibold text-lg text-white">
             Koncert podczas Finału Wielkiej Orkiestry Świątecznej Pomocy
           </h3>
         </div>
         <div className="ktq4">
-          <Image src='/../public/image/plakat_pozegnanie_koleda_23.jpg' width={600} height={500} alt="plakat WOŚP w Ustrzykach Dolnych 2023" />
+          <Image src='/images/plakat_pozegnanie_koleda_23.jpg' width={600} height={500} alt="plakat WOŚP w Ustrzykach Dolnych 2023" />
           <h3 className="pt-3 font-semibold text-lg text-white">
             Koncert podczas Finału Wielkiej Orkiestry Świątecznej Pomocy
           </h3>
