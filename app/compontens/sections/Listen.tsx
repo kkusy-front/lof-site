@@ -22,10 +22,10 @@ const Listen = () => {
     return (
         <section id="posluchaj">
             <div className="container mx-auto">
-                <h2 className="pt-20 mb-5 text-3xl font-semibold tracking-tighter text-center text-gray-200 lg:text-7xl md:text-6xl">
+                <h2 className="pt-20 mb-5 text-3xl font-semibold tracking-tighter text-center text-white lg:text-7xl md:text-6xl">
                     Posłuchaj
                 </h2>
-                <p className="mx-auto text-xl text-center text-gray-300 font-normal leading-relaxed fs521 lg:w-2/3">
+                <p className="mx-auto text-xl text-center text-gray-200 font-normal leading-relaxed fs521 lg:w-2/3">
                     Posłuchaj naszych sampli!
                 </p>
                 <div className='pt-12 pb-24 max-w-4xl mx-auto fsac4 md:px-1 px-3'>

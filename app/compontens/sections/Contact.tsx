@@ -4,10 +4,10 @@ const Contact = () => {
     return (
         <section id="kontakt">
             <div className="container mx-auto">
-                <h2 className="pt-20 mb-5 text-3xl font-semibold tracking-tighter text-center text-gray-200 lg:text-7xl md:text-6xl">
+                <h2 className="pt-20 mb-5 text-3xl font-semibold tracking-tighter text-center text-white lg:text-7xl md:text-6xl">
                     Kontakt
                 </h2>
-                <p className="mx-auto text-xl text-center text-gray-300 font-normal leading-relaxed fs521 lg:w-2/3">
+                <p className="mx-auto text-xl text-center text-gray-200 font-normal leading-relaxed fs521 lg:w-2/3">
                     Skontaktuj się z nami
                 </p>
                 <div className="bg-[#191919] rounded-[10px] max-w-4xl mx-2 md:mx-auto p-10 mt-5 flex flex-col justify-center align-middle shadow-2xl gap-20 md:flex-row">

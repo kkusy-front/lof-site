@@ -19,7 +19,7 @@ export default function Home() {
     <main>
       <section id="hero">
         <div className="p-10 md:p-32 mx-auto relative">
-          <Image src="/images/hero.webp" loading="lazy" className='z-0' alt="" fill objectFit='cover' objectPosition='center' blurDataURL="https://placehold.co/600x500"
+          <Image src="/images/hero.webp" loading="lazy" className='z-0' alt="" fill style={{ objectFit: "cover", objectPosition: 'center' }} blurDataURL="https://placehold.co/600x500"
             placeholder="blur" />
           <div className="container mx-auto relative hero__container-text">
             <div className='w-fit mx-auto '>

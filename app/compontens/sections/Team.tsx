@@ -5,9 +5,12 @@ const Team = () => {
     return (
         <section id="sklad">
             <div className="container mx-auto">
-                <h2 className="pt-20 mb-5 text-3xl font-semibold tracking-tighter text-center text-gray-200 lg:text-7xl md:text-6xl">
+                <h2 className="pt-20 mb-5 text-3xl font-semibold tracking-tighter text-center text-white lg:text-7xl md:text-6xl">
                     Nasz skład
                 </h2>
+                <p className="mx-auto text-xl text-center text-gray-200 font-normal leading-relaxed fs521 lg:w-2/3">
+                    Poznajmy się
+                </p>
                 <div className='pt-12 pb-24 max-w-4xl mx-auto fsac4 md:px-1 px-3'>
                     <div className="inline-block text-left bg-gray-900 rounded-lg overflow-hidden align-bottom transition-all transform shadow-2xl sm:my-8 sm:align-middle sm:max-w-xl sm:w-full">
                         <div className="items-center w-full mr-auto ml-auto relative max-w-7xl md:px-12 lg:px-24">
