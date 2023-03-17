@@ -2,10 +2,12 @@
 import { useEffect } from 'react'
 import TagManager from 'react-gtm-module'
 
-import Concerts from './compontens/sections/Concerts';
-import Contact from './compontens/sections/Contact';
-import Listen from './compontens/sections/Listen';
-import Team from './compontens/sections/Team';
+import dynamic from 'next/dynamic'
+
+const Concerts = dynamic(() => import('./compontens/sections/Concerts'))
+const Contact = dynamic(() => import('./compontens/sections/Contact'))
+const Listen = dynamic(() => import('./compontens/sections/Listen'))
+const Team = dynamic(() => import('./compontens/sections/Team'))
 
 export default function Home() {
 
