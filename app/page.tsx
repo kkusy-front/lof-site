@@ -1,14 +1,13 @@
 'use client';
-import { useEffect } from 'react'
+import React, { Suspense, useEffect, lazy } from 'react'
 import TagManager from 'react-gtm-module'
 
-import dynamic from 'next/dynamic'
 import Image from 'next/image';
 
-const Concerts = dynamic(() => import('./compontens/sections/Concerts'))
-const Contact = dynamic(() => import('./compontens/sections/Contact'))
-const Listen = dynamic(() => import('./compontens/sections/Listen'))
-const Team = dynamic(() => import('./compontens/sections/Team'))
+const Concerts = lazy(() => import('./compontens/sections/Concerts'));
+const Contact = lazy(() => import('./compontens/sections/Contact'));
+const Team = lazy(() => import('./compontens/sections/Team'));
+const Listen = lazy(() => import('./compontens/sections/Listen'));
 
 export default function Home() {
 
@@ -50,7 +49,10 @@ export default function Home() {
 
       <Concerts />
       <Team />
-      <Listen />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Listen />
+      </Suspense>
+
       <Contact />
     </main>
   )
