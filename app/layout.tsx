@@ -6,10 +6,11 @@ export const metadata = {
   title: 'Light Of Freedom | Zespół muzyczny',
   description: 'Light Of Freedom - zespół muzyczny z okolic Ustrzyk Dolnych',
   authors: [{ name: 'Kusy-Web', url: 'https://kusy-web.pl/' }],
+  category: 'music band',
   openGraph: {
     title: 'Light Of Freedom | Zespół muzyczny',
-    description: 'The React Framework for the Web',
-    url: 'https://lightoffreedom.pl/logo.png',
+    description: 'Light Of Freedom - zespół muzyczny z okolic Ustrzyk Dolnych',
+    url: 'https://lightoffreedom.pl',
     siteName: 'Light Of Freedom',
     images: [
       {
@@ -28,8 +29,17 @@ export const metadata = {
     'max-image-preview': 'large',
     'max-snippet': -1,
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Light Of Freedom | Zespół muzyczny',
+    description: 'Light Of Freedom - zespół muzyczny z okolic Ustrzyk Dolnych',
+    creator: 'Kusy-Web',
+    images: ['https://lightoffreedom.pl/logo.png'],
+  },
+  verification: {
+    google: 'iMLaF7YBffYwIBCU9faWUH8fs8HO-lMgNzu67M5TCxc',
+  },
 }
-
 export default function RootLayout({
   children,
 }: {
