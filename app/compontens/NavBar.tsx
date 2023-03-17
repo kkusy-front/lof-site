@@ -15,7 +15,7 @@ export default function NavBar() {
             href="/"
             className="flex text-3xl text-white font-medium"
           >
-            <Image src={'/images/logo.webp'} width={200} height={100} alt="LoF - Light of Freedom" priority />
+            <Image src={'/images/logo.webp'} width={160} height={80} alt="LoF - Light of Freedom" priority />
           </a>
           <button
             className="text-white pb-4 cursor-pointer leading-none px-3 py-1 md:hidden outline-none focus:outline-none content-end ml-auto"
