@@ -16,7 +16,7 @@ const Team = () => {
                                     <div className="flex flex-col items-center">
                                         <Image width={50} height={50} alt=""
                                             src="/images/microphone.png" className="bg-white p-2 flex-shrink-0 object-cover object-center flex w-24 h-24 mr-auto ml-auto rounded-full shadow-xl" />
-                                        <h3 className="mt-8 text-2xl font-semibold leading-none text-white tracking-tighter lg:text-3xl whitespace-nowrap">Svietlana Halichenko</h3>
+                                        <h3 className="mt-8 text-2xl font-semibold leading-none text-white tracking-tighter lg:text-3xl whitespace-nowrap">Svitlana Holichenko</h3>
                                         <p className="mt-3 text-base leading-relaxed text-center text-gray-200">Wokal</p>
                                     </div>
                                 </div>

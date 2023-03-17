@@ -26,7 +26,7 @@ const Listen = () => {
                     Posłuchaj naszych sampli!
                 </p>
                 <div className='pt-12 pb-24 max-w-4xl mx-auto fsac4 md:px-1 px-3'>
-                    <div className="ktq4">
+                    <div className="ktq4 shadow-2xl">
                         <h3 className='text-white font-bold text-3xl mb-4 text-center'>Jazz</h3>
                         <AudioPlayer
                             ref={jazzRef}
@@ -35,7 +35,7 @@ const Listen = () => {
                             onPlay={() => handleStopPlayer('jazz')}
                         />
                     </div>
-                    <div className="ktq4">
+                    <div className="ktq4 shadow-2xl">
                         <h3 className='text-white font-bold text-3xl mb-4 text-center'>Rockowa składanka</h3>
                         <AudioPlayer
                             ref={rockRef}
