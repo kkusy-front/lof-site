@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main>
       <section id="hero">
-        <div className="p-10 md:p-32 mx-auto bg-[url('/images/hero.png')] bg-no-repeat bg-cover bg-center">
+        <div className="p-10 md:p-32 mx-auto bg-[url('/images/hero.webp')] bg-no-repeat bg-cover bg-center">
           <div className="container mx-auto">
             <div className='w-fit mx-auto'>
               <h1 className="text-50 md:text-80  text-center font-4 lh-6 ld-04 font-bold text-white mb-6 border-y-2 border-white">
