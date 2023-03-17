@@ -1,9 +1,18 @@
+'use client';
+import { useEffect } from 'react'
+import TagManager from 'react-gtm-module'
+
 import Concerts from './compontens/sections/Concerts';
 import Contact from './compontens/sections/Contact';
 import Listen from './compontens/sections/Listen';
 import Team from './compontens/sections/Team';
 
 export default function Home() {
+
+  useEffect(() => {
+    TagManager.initialize({ gtmId: 'GTM-WSHBML3' });
+  }, []);
+
   return (
     <main>
       <section id="hero">

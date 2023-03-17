@@ -1,6 +1,6 @@
-import Footer from './compontens/Footer'
-import './globals.css'
-import HashScroll from './hooks/hash-scroll'
+import Footer from './compontens/Footer';
+import './globals.css';
+import HashScroll from './hooks/hash-scroll';
 
 export const metadata = {
   title: 'Light Of Freedom | Zespół muzyczny',
@@ -52,6 +52,8 @@ export default function RootLayout({
           {children}
           <Footer />
         </HashScroll>
+
+
       </body>
     </html>
   )
