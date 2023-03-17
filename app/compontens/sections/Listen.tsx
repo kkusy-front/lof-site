@@ -10,6 +10,7 @@ const Listen = () => {
     const rockRef = useRef<AudioPlayer>(null);
 
     const handleStopPlayer = (name: string) => {
+        console.log(rockRef?.current?.audio?.current)
         if (name === 'jazz') {
             rockRef?.current?.audio?.current?.pause();
         }
@@ -30,6 +31,7 @@ const Listen = () => {
                     <div className="ktq4 shadow-2xl">
                         <h3 className='text-white font-bold text-3xl mb-4 text-center'>Jazz</h3>
                         <AudioPlayer
+                            preload="none"
                             ref={jazzRef}
                             autoPlay={false}
                             src="/musics/jazz.mp3"
