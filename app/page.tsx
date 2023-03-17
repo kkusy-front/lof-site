@@ -8,6 +8,7 @@ const Concerts = lazy(() => import('./compontens/sections/Concerts'));
 const Contact = lazy(() => import('./compontens/sections/Contact'));
 const Team = lazy(() => import('./compontens/sections/Team'));
 const Listen = lazy(() => import('./compontens/sections/Listen'));
+const CookieConsent = lazy(() => import('./compontens/CookieConsent'));
 
 export default function Home() {
 
@@ -54,6 +55,7 @@ export default function Home() {
       </Suspense>
 
       <Contact />
+      <CookieConsent />
     </main>
   )
 }
