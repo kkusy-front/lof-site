@@ -29,11 +29,11 @@ export default function Home() {
             </div>
 
             <h2 className="text-2xl font-4 font-semibold lh-6 ld-04 pb-11 text-white text-center">
-              Zespół muzyczny z Bieszczad.
+              Zespół muzyczny z&nbsp;Bieszczad.
               <br />
               Zapraszamy do kontaktu
             </h2>
-            <div className="ml-6 text-center">
+            <div className="text-center">
               <a
                 className="inline-flex items-center py-3 font-semibold text-black transition duration-500 ease-in-out transform bg-transparent bg-white px-7 text-md md:mt-0 hover:text-black hover:bg-white focus:shadow-outline"
                 href="#kontakt"

@@ -15,7 +15,7 @@ export default function Footer() {
 
           </ul>
           <div className="mt-5 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5  sm:mt-0">
-            © 2021 Company Inc. <span>By <a href="https://kusy-web.pl/"
+            © 2023 Light Of Freedom | <span>By <a href="https://kusy-web.pl/"
               className="text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold tracking-tight"
             >
               Kusy-Web

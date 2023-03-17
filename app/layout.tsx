@@ -1,3 +1,4 @@
+import CookieConsent from './compontens/CookieConsent';
 import Footer from './compontens/Footer';
 import './globals.css';
 import HashScroll from './hooks/hash-scroll';
@@ -53,7 +54,7 @@ export default function RootLayout({
           <Footer />
         </HashScroll>
 
-
+        <CookieConsent />
       </body>
     </html>
   )
