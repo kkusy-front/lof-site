@@ -19,7 +19,7 @@ const CookieConsent = () => {
 
     return (
         <>
-            {show ? <div className="mx-auto fixed bottom-0 md:bottom-10 right-0">
+            {show ? <div className="mx-auto fixed bottom-0 md:bottom-10 md:right-10 shadow-2xl z-50">
                 <div >
                     <div className="md:w-72 bg-white rounded-lg shadow-md p-6" >
                         <div className="w-16 mx-auto relative -mt-10 mb-3">
