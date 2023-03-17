@@ -4,6 +4,7 @@ import React, { useRef } from 'react'
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
 
+
 const Listen = () => {
     const jazzRef = useRef<AudioPlayer>(null);
     const rockRef = useRef<AudioPlayer>(null);
@@ -33,6 +34,8 @@ const Listen = () => {
                             autoPlay={false}
                             src="/musics/jazz.mp3"
                             onPlay={() => handleStopPlayer('jazz')}
+                            showJumpControls={false}
+                            customAdditionalControls={[]}
                         />
                     </div>
                     <div className="ktq4 shadow-2xl">
@@ -42,6 +45,8 @@ const Listen = () => {
                             autoPlay={false}
                             src="/musics/rock_skladanka.mp3"
                             onPlay={() => handleStopPlayer('rock')}
+                            showJumpControls={false}
+                            customAdditionalControls={[]}
                         />
                     </div>
                 </div>

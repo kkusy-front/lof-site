@@ -7,7 +7,9 @@ import Image from 'next/image';
 
 const Concerts = dynamic(() => import('./compontens/sections/Concerts'))
 const Contact = dynamic(() => import('./compontens/sections/Contact'))
-const Listen = dynamic(() => import('./compontens/sections/Listen'))
+const Listen = dynamic(() => import('./compontens/sections/Listen'), {
+  loading: () => <p>Loading...</p>,
+})
 const Team = dynamic(() => import('./compontens/sections/Team'))
 
 export default function Home() {
