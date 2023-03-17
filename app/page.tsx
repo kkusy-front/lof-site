@@ -7,9 +7,7 @@ import Image from 'next/image';
 
 const Concerts = dynamic(() => import('./compontens/sections/Concerts'))
 const Contact = dynamic(() => import('./compontens/sections/Contact'))
-const Listen = dynamic(() => import('./compontens/sections/Listen'), {
-  loading: () => <p>Loading...</p>,
-})
+const Listen = dynamic(() => import('./compontens/sections/Listen'))
 const Team = dynamic(() => import('./compontens/sections/Team'))
 
 export default function Home() {
@@ -24,7 +22,7 @@ export default function Home() {
         <div className="p-10 md:p-32 mx-auto relative">
           <Image src="/images/hero.webp" loading="lazy" className='z-0' alt="" fill objectFit='cover' objectPosition='center' blurDataURL="https://placehold.co/600x500"
             placeholder="blur" />
-          <div className="container mx-auto relative">
+          <div className="container mx-auto relative hero__container-text">
             <div className='w-fit mx-auto '>
               <h1 className="text-50 md:text-80 z-10 text-center font-4 lh-6 ld-04 font-bold text-white mb-6 border-y-2 border-white">
                 Light Of Freedom
