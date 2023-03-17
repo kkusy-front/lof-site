@@ -10,10 +10,10 @@ export default function NavBar() {
   return (
     <header className="sticky top-0 w-full clearNav z-50">
       <div className="max-w-5xl mx-auto flex flex-wrap p-5 flex-col md:flex-row">
-        <div className="flex flex-row items-center justify-between p-3 md:p-1">
+        <div className="flex flex-row items-center justify-between md:p-1">
           <a
             href="/"
-            className="flex text-3xl text-white font-medium mb-4 md:mb-0"
+            className="flex text-3xl text-white font-medium"
           >
             <Image src={'/images/logo.jpg'} width={200} height={100} alt="LoF - Light of Freedom" />
           </a>
@@ -43,22 +43,22 @@ export default function NavBar() {
         </div>
         <div
           className={
-            "md:flex flex-grow items-center" +
+            "md:flex flex-grow items-center mt-4" +
             (navbarOpen ? " flex" : " hidden")
           }
         >
-          <ul className="md:ml-auto md:mr-auto font-4 pt-1 md:pl-14 pl-1 flex flex-wrap items-center md:text-base text-1xl md:justify-center justify-items-start">
-            <li>
-              <Link href="#koncerty" className="mr-11 cursor-pointer text-gray-300 hover:text-white font-semibold tr04">Koncerty</Link>
+          <ul className="md:ml-auto md:mr-auto pt-5 md:pl-14 pl-1 flex flex-wrap items-center md:text-base text-1xl md:justify-center justify-items-start">
+            <li className="mb-5 md:mb-0">
+              <Link href="#koncerty" className="mr-11 mt-5 cursor-pointer text-gray-300 hover:text-white font-semibold tr04">Koncerty</Link>
             </li>
-            <li>
-              <Link href="#sklad" className="mr-11 cursor-pointer text-gray-300 hover:text-white font-semibold tr04">Skład zespołu</Link>
+            <li className="mb-5 md:mb-0">
+              <Link href="#sklad" className="mr-11 mt-5 cursor-pointer text-gray-300 hover:text-white font-semibold tr04">Skład zespołu</Link>
             </li>
-            <li>
-              <Link href="#posluchaj" className="mr-11 cursor-pointer text-gray-300 hover:text-white font-semibold tr04">Posłuchaj</Link>
+            <li className="mb-5 md:mb-0">
+              <Link href="#posluchaj" className="mr-11 mt-5 cursor-pointer text-gray-300 hover:text-white font-semibold tr04">Posłuchaj</Link>
             </li>
-            <li>
-              <Link href="#kontakt" className="mr-11 cursor-pointer text-gray-300 hover:text-white font-semibold tr04">Kontakt</Link>
+            <li className="mb-5 md:mb-0">
+              <Link href="#kontakt" className="mr-11 mt-5 cursor-pointer text-gray-300 hover:text-white font-semibold tr04">Kontakt</Link>
             </li>
           </ul>
         </div>
