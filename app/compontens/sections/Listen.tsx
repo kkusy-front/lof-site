@@ -1,8 +1,11 @@
 'use client';
-import React, { useRef, useState } from 'react'
+import React, { useRef } from 'react'
 
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
+
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 
 
 const Listen = () => {
@@ -35,6 +38,7 @@ const Listen = () => {
                             preload="none"
                             ref={jazzRef}
                             autoPlay={false}
+                            onEmptied={() => console.log("test")}
                             src="/musics/jazz.mp3"
                             onPlay={() => handleStopPlayer('jazz')}
                             showJumpControls={false}
@@ -50,6 +54,27 @@ const Listen = () => {
                             onPlay={() => handleStopPlayer('rock')}
                             showJumpControls={false}
                             customAdditionalControls={[]}
+                        />
+                    </div>
+                    <div className="ktq4 shadow-2xl">
+                        <h3 className='text-white font-bold text-3xl mb-4 text-center'>Fragment z koncertu</h3>
+                        <LiteYouTubeEmbed
+                            id="wo85Lr3Q_SI"
+                            title="Posłuchaj nas z koncertu na żywo"
+                        />
+                    </div>
+                    <div className="ktq4 shadow-2xl">
+                        <h3 className='text-white font-bold text-3xl mb-4 text-center'>Fragment z koncertu</h3>
+                        <LiteYouTubeEmbed
+                            id="dce3SyH8hlM"
+                            title="Posłuchaj nas z koncertu na żywo"
+                        />
+                    </div>
+                    <div className="ktq4 shadow-2xl">
+                        <h3 className='text-white font-bold text-3xl mb-4 text-center'>Fragment z koncertu</h3>
+                        <LiteYouTubeEmbed
+                            id="LI2gnIIMO8U"
+                            title="Posłuchaj nas z koncertu na żywo"
                         />
                     </div>
                 </div>

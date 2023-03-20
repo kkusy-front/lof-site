@@ -12,7 +12,14 @@ export default function Footer() {
                 Facebook
               </a>
             </li>
-
+            <li>
+              <a
+                href="https://www.youtube.com/@LOFgroup"
+                className="text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
+              >
+                Youtube
+              </a>
+            </li>
           </ul>
           <div className="mt-5 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5  sm:mt-0">
             © 2023 Light Of Freedom | <span>By <a href="https://kusy-web.pl/"

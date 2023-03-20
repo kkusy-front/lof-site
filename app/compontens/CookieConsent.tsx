@@ -13,7 +13,6 @@ const CookieConsent = () => {
 
     useEffect(() => {
         const cookie = getCookie('accept-cookie-page');
-        console.log(cookie)
         cookie === "accepted" ? setShow(false) : setShow(true);
     }, [])
 
@@ -23,7 +22,7 @@ const CookieConsent = () => {
                 <div >
                     <div className="md:w-72 bg-white rounded-lg shadow-md p-6" >
                         <div className="w-16 mx-auto relative -mt-10 mb-3">
-                            <Image className="-mt-1" src="https://www.svgrepo.com/show/30963/cookie.svg" width={100} height={100} alt="Cookie Icon SVG" />
+                            <Image className="-mt-1" src="/images/cookie.svg" width={100} height={100} alt="Cookie Icon SVG" />
                         </div>
                         <span className="w-full text-center block leading-normal text-gray-800 text-md mb-3">Ta strona używa ciasteczek dla lepszego działania strony.</span>
                         <div className="flex items-center justify-center">
