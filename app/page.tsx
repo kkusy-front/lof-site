@@ -16,7 +16,7 @@ export default function Home() {
       <main>
         <section id="hero">
           <div className="p-10 md:p-32 mx-auto relative">
-            <Image src="/images/hero.webp" loading="lazy" className='z-0' alt="" fill style={{ objectFit: "cover", objectPosition: 'center' }} />
+            <Image src="/images/hero.webp" priority className='z-0' alt="" fill style={{ objectFit: "cover", objectPosition: 'center' }} />
             <div className="container mx-auto relative hero__container-text">
               <div className='w-fit mx-auto '>
                 <h1 className="text-50 md:text-80 z-10 text-center font-4 lh-6 ld-04 font-bold text-white mb-6 border-y-2 border-white">
