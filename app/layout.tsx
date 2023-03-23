@@ -50,8 +50,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Suspense fallback={<div role="status" className='flex justify-center align-middle min-h-screen w-full'>
-          <div className="w-12 h-12 rounded-full animate-spin border border-solid border-white border-t-transparent"></div>
+        <Suspense fallback={<div role="status" className='flex justify-center items-center min-h-screen w-full'>
+          <div className="w-14 h-14 rounded-full animate-spin border border-solid border-white border-t-transparent"></div>
         </div>}>
           <HashScroll>
             {children}
