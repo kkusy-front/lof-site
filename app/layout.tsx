@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import Footer from './compontens/Footer';
 import './globals.css';
 import HashScroll from './hooks/hash-scroll';
@@ -48,10 +49,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <HashScroll>
-          {children}
-          <Footer />
-        </HashScroll>
+        <Suspense fallback={<p>loading..</p>}>
+          <HashScroll>
+            {children}
+            <Footer />
+          </HashScroll>
+        </Suspense>
       </body>
     </html>
   )
