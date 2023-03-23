@@ -16,7 +16,7 @@ export const metadata = {
     siteName: 'Light Of Freedom',
     images: [
       {
-        url: 'https://lightoffreedom.pl/logo.webp',
+        url: 'https://lightoffreedom.pl/logo.png',
         width: 800,
         height: 600,
       },
@@ -36,7 +36,7 @@ export const metadata = {
     title: 'Light Of Freedom | Zespół muzyczny',
     description: 'Light Of Freedom - zespół muzyczny z okolic Ustrzyk Dolnych',
     creator: 'Kusy-Web',
-    images: ['https://lightoffreedom.pl/logo.webp'],
+    images: ['https://lightoffreedom.pl/logo.png'],
   },
   verification: {
     google: 'iMLaF7YBffYwIBCU9faWUH8fs8HO-lMgNzu67M5TCxc',
