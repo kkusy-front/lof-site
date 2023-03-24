@@ -3,7 +3,6 @@ import React, { lazy, Suspense } from 'react'
 
 import Image from 'next/image';
 import Script from 'next/script';
-import Loading from './loading';
 
 const Concerts = lazy(() => import('./compontens/sections/Concerts'));
 const Contact = lazy(() => import('./compontens/sections/Contact'));
@@ -48,13 +47,13 @@ export default function Home() {
 
         <Team />
 
-        <Suspense fallback={<Loading />}>
+        <Suspense fallback={<div className="w-14 h-14 rounded-full animate-spin border border-solid border-white border-t-transparent"></div>}>
           <Listen />
         </Suspense>
 
         <Contact />
 
-        <Suspense fallback={<Loading />}>
+        <Suspense fallback={<div className="w-14 h-14 rounded-full animate-spin border border-solid border-white border-t-transparent"></div>}>
           <CookieConsent />
         </Suspense>
 
