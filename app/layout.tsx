@@ -61,11 +61,7 @@ export default function RootLayout({
     <html lang="pl">
       <body>
         <NavBar />
-        {/* <Suspense fallback={<Loading />}> */}
-        <HashScroll>
-          {children}
-        </HashScroll>
-        {/* </Suspense> */}
+        {children}
         <Footer />
         <Analytics />
       </body>

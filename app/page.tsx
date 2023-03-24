@@ -3,6 +3,7 @@ import React, { Suspense } from 'react'
 import Image from 'next/image';
 import Script from 'next/script';
 import dynamic from 'next/dynamic';
+import HashScroll from './hooks/hash-scroll';
 
 const Concerts = dynamic(() => import('./compontens/sections/Concerts'));
 const Contact = dynamic(() => import('./compontens/sections/Contact'));
@@ -42,21 +43,21 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        <Concerts />
-
-        <Team />
-
         <Suspense fallback={<div className="w-14 h-14 rounded-full animate-spin border border-solid border-white border-t-transparent"></div>}>
-          <Listen />
+          <HashScroll>
+            <Concerts />
+
+            <Team />
+
+
+            <Listen />
+
+
+            <Contact />
+
+            <CookieConsent />
+          </HashScroll>
         </Suspense>
-
-        <Contact />
-
-        <Suspense fallback={<div className="w-14 h-14 rounded-full animate-spin border border-solid border-white border-t-transparent"></div>}>
-          <CookieConsent />
-        </Suspense>
-
       </main>
 
       {/* Google Tag Manager - Global base code */}
