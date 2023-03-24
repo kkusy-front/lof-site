@@ -5,12 +5,19 @@ import HashScroll from './hooks/hash-scroll';
 import { Analytics } from '@vercel/analytics/react';
 import Loading from './loading';
 import NavBar from './compontens/NavBar';
+import { Metadata } from 'next';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Light Of Freedom | Zespół muzyczny',
   description: 'Light Of Freedom - zespół muzyczny z okolic Ustrzyk Dolnych',
   authors: [{ name: 'Kusy-Web', url: 'https://kusy-web.pl/' }],
   category: 'music band',
+  colorScheme: 'dark',
+  formatDetection: {
+    email: true,
+    address: false,
+    telephone: true,
+  },
   openGraph: {
     title: 'Light Of Freedom | Zespół muzyczny',
     description: 'Light Of Freedom - zespół muzyczny z okolic Ustrzyk Dolnych',
