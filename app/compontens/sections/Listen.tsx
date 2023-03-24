@@ -19,6 +19,8 @@ const Listen = () => {
                     <div className="ktq4 shadow-2xl">
                         <h3 className='text-white font-bold text-3xl mb-4 text-center'>Składanka Jazzowa</h3>
                         <LiteYouTubeEmbed
+                            webp={true}
+                            cookie={true}
                             id="cXDgdt6KFxA"
                             title="Posłuchaj naszej składanki jazzowej"
                         />
@@ -26,6 +28,7 @@ const Listen = () => {
                     <div className="ktq4 shadow-2xl">
                         <h3 className='text-white font-bold text-3xl mb-4 text-center'>Składanka Rockowa</h3>
                         <LiteYouTubeEmbed
+                            webp={true}
                             id="SmPOCW0Qs8Y"
                             title="Posłuchaj nas z koncertu na żywo"
                         />
@@ -33,6 +36,7 @@ const Listen = () => {
                     <div className="ktq4 shadow-2xl">
                         <h3 className='text-white font-bold text-3xl mb-4 text-center'>Fragment z koncertu</h3>
                         <LiteYouTubeEmbed
+                            webp={true}
                             id="wo85Lr3Q_SI"
                             title="Posłuchaj nas z koncertu na żywo"
                         />
@@ -40,6 +44,7 @@ const Listen = () => {
                     <div className="ktq4 shadow-2xl">
                         <h3 className='text-white font-bold text-3xl mb-4 text-center'>Fragment z koncertu</h3>
                         <LiteYouTubeEmbed
+                            webp={true}
                             id="dce3SyH8hlM"
                             title="Posłuchaj nas z koncertu na żywo"
                         />
@@ -47,6 +52,7 @@ const Listen = () => {
                     <div className="ktq4 shadow-2xl">
                         <h3 className='text-white font-bold text-3xl mb-4 text-center'>Fragment z koncertu</h3>
                         <LiteYouTubeEmbed
+                            webp={true}
                             id="LI2gnIIMO8U"
                             title="Posłuchaj nas z koncertu na żywo"
                         />
