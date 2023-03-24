@@ -1,8 +1,9 @@
 'use client';
-import React, { Suspense, lazy } from 'react'
+import React, { lazy, Suspense } from 'react'
 
 import Image from 'next/image';
 import Script from 'next/script';
+import Loading from './loading';
 
 const Concerts = lazy(() => import('./compontens/sections/Concerts'));
 const Contact = lazy(() => import('./compontens/sections/Contact'));
@@ -45,12 +46,13 @@ export default function Home() {
 
         <Concerts />
         <Team />
-        <Suspense fallback={<div>Loading...</div>}>
-          <Listen />
-        </Suspense>
+
+        <Listen />
 
         <Contact />
-        <CookieConsent />
+        <Suspense fallback={<Loading />}>
+          <CookieConsent />
+        </Suspense>
       </main>
 
       {/* Google Tag Manager - Global base code */}

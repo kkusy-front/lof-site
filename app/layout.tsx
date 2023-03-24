@@ -43,6 +43,7 @@ export const metadata = {
     google: 'iMLaF7YBffYwIBCU9faWUH8fs8HO-lMgNzu67M5TCxc',
   },
 }
+
 export default function RootLayout({
   children,
 }: {
@@ -51,12 +52,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <HashScroll>
-          <Suspense fallback={<Loading />}>
+        <Suspense fallback={<Loading />}>
+          <HashScroll>
             {children}
-          </Suspense>
-          <Footer />
-        </HashScroll>
+          </HashScroll>
+        </Suspense>
+        <Footer />
         <Analytics />
       </body>
     </html>

@@ -1,3 +1,4 @@
+'use client';
 import React from 'react'
 
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
@@ -15,6 +16,20 @@ const Listen = () => {
                     Posłuchaj naszych sampli!
                 </p>
                 <div className='pt-12 pb-24 max-w-4xl mx-auto fsac4 md:px-1 px-3'>
+                    <div className="ktq4 shadow-2xl">
+                        <h3 className='text-white font-bold text-3xl mb-4 text-center'>Składanka Jazzowa</h3>
+                        <LiteYouTubeEmbed
+                            id="cXDgdt6KFxA"
+                            title="Posłuchaj naszej składanki jazzowej"
+                        />
+                    </div>
+                    <div className="ktq4 shadow-2xl">
+                        <h3 className='text-white font-bold text-3xl mb-4 text-center'>Składanka Rockowa</h3>
+                        <LiteYouTubeEmbed
+                            id="SmPOCW0Qs8Y"
+                            title="Posłuchaj nas z koncertu na żywo"
+                        />
+                    </div>
                     <div className="ktq4 shadow-2xl">
                         <h3 className='text-white font-bold text-3xl mb-4 text-center'>Fragment z koncertu</h3>
                         <LiteYouTubeEmbed
