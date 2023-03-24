@@ -1,14 +1,14 @@
-'use client';
-import React, { lazy, Suspense } from 'react'
+import React from 'react'
 
 import Image from 'next/image';
 import Script from 'next/script';
+import dynamic from 'next/dynamic';
 
-const Concerts = lazy(() => import('./compontens/sections/Concerts'));
-const Contact = lazy(() => import('./compontens/sections/Contact'));
-const Team = lazy(() => import('./compontens/sections/Team'));
-const Listen = lazy(() => import('./compontens/sections/Listen'));
-const CookieConsent = lazy(() => import('./compontens/CookieConsent'));
+const Concerts = dynamic(() => import('./compontens/sections/Concerts'));
+const Contact = dynamic(() => import('./compontens/sections/Contact'));
+const Team = dynamic(() => import('./compontens/sections/Team'));
+const Listen = dynamic(() => import('./compontens/sections/Listen'));
+const CookieConsent = dynamic(() => import('./compontens/CookieConsent'));
 
 export default function Home() {
   return (
