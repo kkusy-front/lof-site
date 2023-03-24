@@ -4,6 +4,7 @@ import './globals.css';
 import HashScroll from './hooks/hash-scroll';
 import { Analytics } from '@vercel/analytics/react';
 import Loading from './loading';
+import NavBar from './compontens/NavBar';
 
 export const metadata = {
   title: 'Light Of Freedom | Zespół muzyczny',
@@ -50,8 +51,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="pl">
       <body>
+        <NavBar />
         <Suspense fallback={<Loading />}>
           <HashScroll>
             {children}
