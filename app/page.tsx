@@ -45,14 +45,19 @@ export default function Home() {
         </section>
 
         <Concerts />
+
         <Team />
 
-        <Listen />
+        <Suspense fallback={<Loading />}>
+          <Listen />
+        </Suspense>
 
         <Contact />
+
         <Suspense fallback={<Loading />}>
           <CookieConsent />
         </Suspense>
+
       </main>
 
       {/* Google Tag Manager - Global base code */}
