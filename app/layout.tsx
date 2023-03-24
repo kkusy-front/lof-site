@@ -3,6 +3,7 @@ import Footer from './compontens/Footer';
 import './globals.css';
 import HashScroll from './hooks/hash-scroll';
 import { Analytics } from '@vercel/analytics/react';
+import Loading from './loading';
 
 export const metadata = {
   title: 'Light Of Freedom | Zespół muzyczny',
@@ -50,15 +51,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Suspense fallback={<div role="status" className='flex justify-center items-center min-h-screen w-full'>
-          <div className="w-14 h-14 rounded-full animate-spin border border-solid border-white border-t-transparent"></div>
-        </div>}>
-          <HashScroll>
+        <HashScroll>
+          <Suspense fallback={<Loading />}>
             {children}
-            <Footer />
-            <Analytics />
-          </HashScroll>
-        </Suspense>
+          </Suspense>
+          <Footer />
+        </HashScroll>
+        <Analytics />
       </body>
     </html>
   )
