@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Script from 'next/script';
 import dynamic from 'next/dynamic';
 import HashScroll from './hooks/hash-scroll';
+import Loading from './loading';
 
 const Concerts = dynamic(() => import('./compontens/sections/Concerts'));
 const Contact = dynamic(() => import('./compontens/sections/Contact'));
@@ -43,7 +44,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <Suspense fallback={<div className="w-14 h-14 rounded-full animate-spin border border-solid border-white border-t-transparent"></div>}>
+        <Suspense fallback={<Loading />}>
           <HashScroll>
             <Concerts />
 
