@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 
 import Image from 'next/image';
 import Script from 'next/script';
@@ -47,15 +47,15 @@ export default function Home() {
 
         <Team />
 
-        {/* <Suspense fallback={<div className="w-14 h-14 rounded-full animate-spin border border-solid border-white border-t-transparent"></div>}> */}
-        <Listen />
-        {/* </Suspense> */}
+        <Suspense fallback={<div className="w-14 h-14 rounded-full animate-spin border border-solid border-white border-t-transparent"></div>}>
+          <Listen />
+        </Suspense>
 
         <Contact />
 
-        {/* <Suspense fallback={<div className="w-14 h-14 rounded-full animate-spin border border-solid border-white border-t-transparent"></div>}> */}
-        <CookieConsent />
-        {/* </Suspense> */}
+        <Suspense fallback={<div className="w-14 h-14 rounded-full animate-spin border border-solid border-white border-t-transparent"></div>}>
+          <CookieConsent />
+        </Suspense>
 
       </main>
 
